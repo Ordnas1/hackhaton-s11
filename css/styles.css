@@ -1,0 +1,198 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #F0FFFF;
+}
+
+/* header elements */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+/* main elements */
+
+main {
+    height: 80vh    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** calculator elements */ 
+
+.calculator {
+    width: auto ;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "display display display display"
+    "display display display display"
+    ". . . clear"
+    "seven eight nine mult"
+    "four five six divide"
+    "one two three sub"
+    "zero dec-point equal add";
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px 15px;
+    padding: 2rem 2.5rem;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:#B0C4DE;
+}
+
+
+.calc-display {
+    grid-area: display;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #F0FFF0;
+    margin-bottom: 2rem;
+}
+
+.display-text {
+    text-align: right;
+    justify-self: right;
+    width: 100%;
+    font-size: 4rem;
+    margin: 0 0.8rem 0.8rem 0;
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    color: black;
+    overflow: auto;
+}
+
+/* calculator buttons */ 
+
+.btn-label {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.btn-number {
+    font-size: 1.9rem;
+}
+
+
+.calc-btn {
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: #FFFFF0;
+}
+
+.calc-btn-num {
+    background-color: #708090;
+}
+
+.calc-btn-top {
+    background-color: #FF6347;
+}
+
+.calc-btn-op {
+    background-color: #C0C0C0;
+}
+
+.calc-clear {
+    grid-area: clear;
+        
+}
+
+
+.mult {
+    grid-area: mult;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.sub {
+    grid-area: sub;
+}
+
+.add {
+    grid-area: add;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.six {
+    grid-area: six;
+}
+
+.five {
+    grid-area: five;
+}
+
+.four {
+    grid-area: four;
+}
+
+.three {
+    grid-area: three;
+}
+
+.two {
+    grid-area: two;
+}
+
+.one {
+    grid-area: one;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.dec-point {
+    grid-area: dec-point;
+}
+
+.equal {
+    grid-area: equal;
+    background-color: #FF6347;  
+    font-size: 2rem;
+}
+
+

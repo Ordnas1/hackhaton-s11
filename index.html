@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Calculadora en Linea</title>
+</head>
+
+<body>
+    <header>
+        <h1>Online Calculator</h1>
+        <p class="subtitle">Un proyecto de Sandro Peirano</p>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <div class="calc-display">
+                <p class="display-text">0</p>
+            </div>
+            <div class="calc-clear calc-btn calc-btn-top">
+                <p class="btn-label calc-clear">Clear</p>
+            </div>
+            <div data-value="*" class="mult calc-btn calc-btn-op">
+                <p data-value="*" class="btn-label">X</p>
+            </div>
+            <div data-value="/" class="divide calc-btn calc-btn-op">
+                <p data-value="/" class="btn-label">/</p>
+            </div>
+            <div data-value="-" class="sub calc-btn calc-btn-op">
+                <p data-value="-" class="btn-label">-</p>
+            </div>
+            <div data-value="+" class="add calc-btn calc-btn-op">
+                <p data-value="+" class="btn-label">+</p>
+            </div>
+            <div id="9" data-value="9" class="nine calc-btn calc-btn-num">
+                <p data-value="9" class="btn-label btn-number">9</p>
+            </div>
+            <div id="8" data-value="8" class="eight calc-btn calc-btn-num">
+                <p data-value="8" class="btn-label btn-number">8</p>
+            </div>
+            <div id="7" data-value="7" class="seven calc-btn calc-btn-num">
+                <p data-value="7" class="btn-label btn-number">7</p>
+            </div>
+            <div id="6" data-value="6" class="six calc-btn calc-btn-num">
+                <p data-value="6" class="btn-label btn-number">6</p>
+            </div>
+            <div id="5" data-value="5" class="five calc-btn calc-btn-num">
+                <p data-value="5" class="btn-label btn-number">5</p>
+            </div>
+            <div id="4" data-value="4" class="four calc-btn calc-btn-num">
+                <p data-value="4" class="btn-label btn-number">4</p>
+            </div>
+            <div id="3" data-value="3" class="three calc-btn calc-btn-num">
+                <p data-value="3" class="btn-label btn-number">3</p>
+            </div>
+            <div id="2" data-value="2" class="two calc-btn calc-btn-num">
+                <p data-value="2" class="btn-label btn-number">2</p>
+            </div>
+            <div id="1" data-value="1" class="one calc-btn calc-btn-num">
+                <p data-value="1" class="btn-label btn-number">1</p>
+            </div>
+            <div id="0" data-value="0" class="zero calc-btn calc-btn-num">
+                <p data-value="0" class="btn-label btn-number">0</p>
+            </div>
+            <div id="dec-point" data-value="." class="dec-point calc-btn calc-btn-num">
+                <p data-value="." class="btn-label">.</p>
+            </div>
+            <div class="equal calc-btn ">
+                <p class="btn-label">=</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
